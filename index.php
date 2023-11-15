@@ -56,36 +56,34 @@
 
     if($age>=18){
         //instructions
-        echo 'Bravo, tu peux voter !';
+        echo 'Bravo, tu peux voter !'.'<br>';
     }
     else{
          //instructions dans le cas ou la réponse est false
-        echo 'Attends un peu, tu pourras voter dans quelques années';
+        echo 'Attends un peu, tu pourras voter dans quelques années'.'<br>';
     }
-    else if($age>=15){
-        eho'Attends de grandir !';
-    }
+   
     //LES FONCTIONS
     //une suite d'instructions à réaliser
-    //quand on se connecte sur une site, on véridie le peseudo (on se connecte) et on affiche un message
+    //quand on se connecte sur une site, on vérifie le pseudo (on se connecte) et on affiche un message
 
     function bienvenue(){
-    // on récupère les info dans le bdd (dans els variables)
-    //on affiche un message
-        $pseudo="Carole";
-    //on affiche un message
-    //!$pseudo=> == false
-    //if($pseudo)=>$pseudo==true
-        if($pseudo){
-        echo 'Bienvenue' .$pseudo;
+        // on récupère les info dans le bdd (dans els variables)
+        //on affiche un message
+            $pseudo=' Carole';
+        //on affiche un message
+        //!$pseudo=> == false
+        //if($pseudo)=>$pseudo==true
+            if($pseudo){
+            echo 'Bienvenue' .$pseudo;
+            }
+            else echo 'Merci de vous identifier';
         }
-        else echo 'Merci de vous identifier';
-    }
-    echo bienvenue();
+        echo bienvenue();
 
     //les boucles
 
-    // LEs tableaux => listes avec des clés
+    // Les tableaux => listes avec des clés
     //array
     //nom = tous : les noms, prénoms, âges : ID
     //20 lignes (20 personnes) = chaque ligne aura un identifiant unique
@@ -95,7 +93,7 @@
 
 
     // Création d'un blog
-    $articles 
+   // $articles [ ]
     ?>
    
 
