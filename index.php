@@ -93,7 +93,7 @@
 
 
     // Création d'un blog
-   // $articles [ ]
+   // $articles [ ]llll
     ?>
    
 
