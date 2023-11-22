@@ -82,18 +82,93 @@
         echo bienvenue();
 
     //les boucles
+?>
+        <h3>Les boucles en Ph</h3>
+<?php
+        $nombre = 0;
+
+        while($nombre<=40){
+            // instructions
+            echo 'ceci est la ligne N°'.$nombre. '<br>';
+            $nombre+=1;
+        }
+
+        /* ++ => +1
+        +=2 => +2
+        decrementer
+        -- => -1
+        -=2=> -2
+        */
+            
+?>
+ <p>2024 => Afficher les année bisextiles (4ans) de cette année jusqu'en 2025</p>
+    <?php
+            $annee = 2024;
+            while($annee<=2050){
+                echo $annee.'<br>';
+                $annee+=4;
+            }
+    // autre façon de faire ue boucle
+    for($age=20;$age<=30;$age+=2){
+        echo $age. '<br>';
+    }
+
+    // boucle pour l'affichage des données contenues dans les tableaux
 
     // Les tableaux => listes avec des clés
     //array
+    $tableau =[5,2,3,'voiture','oiseau'];
+
+    //5=0
+    //2=1
+    //3=2
+    //voiture=3
+    //oiseau=4
+
+    echo $tableau[0].'<br>';
+    
     //nom = tous : les noms, prénoms, âges : ID
     //20 lignes (20 personnes) = chaque ligne aura un identifiant unique
     //1 /Dupont/Pierre/30
-    //2 /chicouf/Pierre/24
-    //3 /hernandez/Pierre/18
+    //2 /chicouf/Jean/24
+    //3 /hernandez/José/18
+
+    $client =[ 
+                'nom'=>'Dupont',
+                'adresse'=>'Rue de la république',
+                'ville'=>'Toulouse',
+    ];
+        echo $client['nom'] .' '. $client['adresse'].' ' .$client['ville'];
+
+    $clients = [ 
+        ['nom'=>'Dupont',
+        'adresse'=>'Rue de la république',
+        'ville'=>'Toulouse'
+        ],
+        ['nom'=>'Fernandez',
+                'adresse'=>'Rue de la république',
+                'ville'=>'Montpellier'],
+        ['nom'=>'Durand',
+                'adresse'=>'Rue de la république',
+                'ville'=>'Avignon'],
+        ['nom'=>'François',
+                'adresse'=>'Rue de la république',
+                'ville'=>'Biarritz'],
+        ['nom'=>'Bidouche',
+                'adresse'=>'Rue de la république',
+                'ville'=>'Bayonne']
+    ];
+
+    //boucle pour l'affichage des données contenues dans les tableaux
+    // pour chaque = foreach
+    foreach($clients as $alias=>$item){
+
+        echo '<h3>' .$item['nom']. '</h3><p>' .$item['adresse']. ' ' .$item['ville'].'</p>';
+    }
 
 
     // Création d'un blog
-   // $articles [ ] TTT ajour sur github
+   //$articles = [ ];
     ?>
    
 
